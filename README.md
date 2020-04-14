@@ -12,9 +12,16 @@ Spring Framework: Spring MVC Fundamentals
     - Map<String, String> model
 - @ModelAttribute
 - @PostMapping
+- InternalResourceViewResolver
+- WebMvcConfigurer.addResourceHandlers
+    - addResourceHandler: it states the desired URL to expose the static resources.-
+    - addResourceLocations: it links the locations to be expose through the given resource handler.  
 ## About MVC
 ### View
 View can access the model through a controller. View represents the model or desired data.
+
+Views are resolved by a Controller building a model and it's passed to the View Resolver which then will determine the 
+correct view that we want to display and choose the appropriate view based of that request.
 ### Controller
 It interprets the user requests and selects the proper view based of the requested view or what information we get back from our data model.
 ### Model
