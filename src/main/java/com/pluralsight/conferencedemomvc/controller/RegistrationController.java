@@ -22,6 +22,6 @@ public class RegistrationController {
     @PostMapping("registration")
     public String addRegistration(@ModelAttribute(name = "registration")Registration registration) {
         log.log(Level.INFO, "Registration: " + registration.getName());
-        return "registration";
+        return "redirect:registration";
     }
 }

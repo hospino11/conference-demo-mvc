@@ -19,7 +19,8 @@ Spring Framework: Spring MVC Fundamentals
 - Interceptor
     - SessionLocaleResolver: ties our current  session to a locale.
     - LocaleChangeInterceptor: looks for a parameter either through a hidden element in our url string as a query parameter.
-- I18N  
+- I18N
+- Post-Redirect-Get (PRG)
 ## About MVC
 ### View
 View can access the model through a controller. View represents the model or desired data.
@@ -38,3 +39,7 @@ Interceptor are used to allows us to intercept calls to our server and perform s
 - Security
 - I18N: internationalization of sites and catching their request to change locales.
 - Performance monitoring: we can to intercept each call to perform some metric gathering on a request.
+## PRG
+Post-Redirect-Get pattern (PRG) is a technique used to help eliminate form re-submission.
+The user post to the controller does whatever intended action was requested but before returning the view back to the user, 
+it does an internal redirect and issues a get back to itself to display the page to the user.
