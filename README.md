@@ -21,6 +21,14 @@ Spring Framework: Spring MVC Fundamentals
     - LocaleChangeInterceptor: looks for a parameter either through a hidden element in our url string as a query parameter.
 - I18N
 - Post-Redirect-Get (PRG)
+- Validator
+    - @Valid: javax.validation.Valid
+    - @NotBlank: javax.validation.constraints.NotBlank
+    - BindingResult: captures the validation errors
+    - form:errors: adds the errors in the HTML page
+    - JSR 303: was the original specification for bean validation. It works well for JSE 5. Bean validation spec 1.0
+    - JSR 349: is targeted to JSE 7. It cleaned bean ambiguities with bean spec 1.0 and It's the bean validation spec 1.1
+    - JSR 380: was released as of JSE 8 and focused in the modularity changes that were introduced on JSE 9. Bean validation spec 2.0
 ## About MVC
 ### View
 View can access the model through a controller. View represents the model or desired data.

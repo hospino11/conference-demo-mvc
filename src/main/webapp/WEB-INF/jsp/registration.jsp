@@ -17,6 +17,16 @@
                 </td>
                 <td>
                     <form:input path="name" />
+                    <form:errors path="name" element="span" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <spring:message code="password" />:
+                </td>
+                <td>
+                    <form:password path="password" />
+                    <form:errors path="password" element="span" />
                 </td>
             </tr>
             <tr>
