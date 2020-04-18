@@ -30,6 +30,9 @@ Spring Framework: Spring MVC Fundamentals
     - JSR 349: is targeted to JSE 7. It cleaned bean ambiguities with bean spec 1.0 and It's the bean validation spec 1.1
     - JSR 380: was released as of JSE 8 and focused in the modularity changes that were introduced on JSE 9. Bean validation spec 2.0
     - I18N validation error messages
+- @RestController
+- @PostMapping
+- Calling RestController with JQuery
 ## About MVC
 ### View
 View can access the model through a controller. View represents the model or desired data.
